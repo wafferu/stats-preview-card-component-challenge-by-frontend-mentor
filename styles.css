@@ -1,8 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+
+body {
+  background-color: hsl(233, 47%, 7%);
+}
+
+h1 {
+  font-size: 1.875rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 15px;
+}
+
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+
+.purpleText {
+  color: hsl(277, 64%, 61%);
+}
+
+.whiteText-1 {
+  color: hsl(0, 0%, 100%)
+}
+
+.whiteText-2 {
+  color: hsla(0, 0%, 100%, 0.75)
+}
+
+.whiteText-3 {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.upperCaseText {
+  text-transform: uppercase;
+}
+
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  background-color: white;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.statsPrevCardComp {
+  background-color: hsl(244, 38%, 16%);
+  width: 90vw;
+  margin: 7rem auto;
+  display: flex;
+  border-radius: 0.5rem;
+}
+
+.statsPrevCardCompDiv h1 {
+  margin-top: 5%;
+  padding: 1% 5%;
+}
+
+.statsPrevCardCompDiv p.whiteText-2 {
+  margin-top: 5%;
+  padding: 1% 8%;
+}
+
+.statsPrevCardCompBox {
+  margin: 5%;
+  padding: 5%;
+}
+
+.statsPrevCardCompBoxCont {
+  margin: 10% 0;
+}
+
+.statsPrevCardCompDiv:first-child {
+  background: hsl(277, 64%, 61%);
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+.statsPrevCardCompDiv:first-child img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  opacity: 0.6;
+}
+
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+
+@media (max-width: 425px) {
+  
+  .statsPrevCardComp {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (min-width: 426px) {
+  .statsPrevCardComp {
+    flex-direction: row-reverse;
+  }
+
+  .statsPrevCardCompDiv {
+    width: 50%;
+  }
+
+  .statsPrevCardCompDiv:first-child {
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+  }
+
+  .statsPrevCardCompDiv:first-child img {
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+  }
+
+  .statsPrevCardCompBox {
+    text-align: left;
+  }
+
+  .statsPrevCardCompBox {
+    margin: 0.8rem;
+    padding: 0.8rem;
+  }
+
+  .statsPrevCardCompDiv h1 {
+    margin-top: 2rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .statsPrevCardCompDiv p.whiteText-2 {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .statsPrevCardCompBox {
+    display: flex;
+    
+  }
+
+  .statsPrevCardCompBoxCont {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 769px) {
+  .statsPrevCardComp {
+    width: 57.6rem;
+  }
+
+  .statsPrevCardCompDiv h1 {
+    margin-top: 10%;
+    padding: 1% 15% 1% 10%;
+  }
+
+  .statsPrevCardCompDiv p.whiteText-2 {
+    margin-top: 1rem;
+    padding: 1% 15% 1% 10%;
+  }
+
+  .statsPrevCardCompBox {
+    margin: 5%;
+    padding: 5%;
+  }
 }
